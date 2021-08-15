@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+.post{
+    width: 270px;
+    height:270px;
+    margin-top:25px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+   
+}
+img{
+    width: 100%;
+    transition:all 1s;
+}
+.post img:hover{
+    transform: scale(1.3);
+    }
+.post:hover{
+    box-shadow: 0px 0px 10px black;
+    }
+.main1{
+    
+    margin-top: 70px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tag{
+    color:white;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: -100px;
+    background: hsl(227deg 33% 8% / 80%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    transition: all 1s;;
+}
+.post:hover .tag{
+    bottom:0px; 
+ }
+ .border{
+    margin-left:5px;
+    background: white;
+    color:hsl(227deg 33% 8%);
+    border-radius: 3px;
+    padding: 4px;
+}
+.border:hover{
+    box-shadow: inset 0px 0px 5px hsl(227deg 33% 8%) ;
+    font-weight: bold;
+}
+.red{
+    transition: all 1s;
+    font-size: 16px;
+}
+.red:hover,.heartcolor{
+    color:red;
+}
+body{
+    margin:0px;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #0e111c;
+    position:fixed;
+    top:0px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    z-index: 1;
+
+}
+#website{
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 1.5rem;;
+}
+#logo{
+    width: 40px;
+}
+#menu{
+    color:white;
+     width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.8rem;
+    border-radius: 3px;  
+    padding:5px;
+    transition: all 1s;  
+}
+#menu a:hover{
+    background-color: white;
+    color:#0e111c;
+  }
+
+
+
+
+
+
