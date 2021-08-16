@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import '../CSS/myStyles.css'
-import PostTag from  './postTag'
+import  { PostTag }  from  './postTag';
 
 const data=[
     {
@@ -77,26 +77,28 @@ const data=[
 ]
  
 
-class post extends Component {
-     
-     
-     list= data.map(post => 
-        ( <section className="post" key={post.id}>
-         <img src={post['Image']} alt="logo"/>
-         <PostTag data={post}/> 
-          </section>))
-          
-     render(){
-       
-           return <div className="main1">
-           Hover over item to view details.
-           <div className="main">
-           {this.list}
-           </div>
-           </div>
-  }    
+const post = () => {
+    return ( 
+        <div className="main1">
+            Hover over item to view details.
+            <div className="main">
+                {data.map((post) => {
+                    return (
+                        <section className="post" key={post.id}>
+                            <img src={post.Image} alt="logo"/>
+                            <PostTag 
+                                price = { post.price }
+                                size = { post.size }
+                                post = { post }
+                            /> 
+                        </section>
+                        )
+                })}
+            </div>
+        </div>
+    )
 }
 
-export default post
+export default post;
 
 
